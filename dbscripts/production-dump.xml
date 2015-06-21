@@ -1,0 +1,35 @@
+<project name="cbs-pull-dump" basedir=".">
+
+    <property name="host" value="91.225.130.110"/>
+    <property name="user" value="user"/>
+    <property name="pass" value="B90Xjtu8"/>
+
+    <!--<property name="host" value="91.225.130.74"/>-->
+    <!--<property name="user" value="user"/>-->
+    <!--<property name="pass" value="scWF4y2x"/>-->
+    <property name="dump-script-name" value="backup-for-recreation.sh"/>
+    <property file="dbsetup.properties"/>
+
+    <!--
+    In order to execute sshexec and scp task put jsch.jar and ant-jsch.jar to your ${ant.home}/lib folder
+    http://search.maven.org/remotecontent?filepath=com/jcraft/jsch/0.1.42/jsch-0.1.42.jar
+    http://search.maven.org/remotecontent?filepath=ant/ant-jsch/1.6.5/ant-jsch-1.6.5.jar
+    -->
+
+    <target name="make-production-db-dump">
+        <sshexec host="${host}" username="${user}" password="${pass}" trust="true"
+                 command="mkdir ~/dbscript" failonerror="false"/>
+        <scp file="${dump-script-name}" todir="${user}:${pass}@${host}:~/dbscript" trust="true">
+            <fileset dir="${basedir}">
+                <include name="backup-for-recreation.sh"/>
+                <include name="dbsetup.properties"/>
+            </fileset>
+        </scp>
+        <sshexec host="${host}" username="${user}" password="${pass}" trust="true"
+                 command="cd ~/dbscript; chmod a+x ${dump-script-name}; ./${dump-script-name}; cd ../; rm -rf dbscript"/>
+    </target>
+
+    <target name="load-dump-from-production">
+        <scp file="${user}:${pass}@${host}:~/backup/last_backup.sql" todir="../backup" trust="true"/>
+    </target>
+</project>

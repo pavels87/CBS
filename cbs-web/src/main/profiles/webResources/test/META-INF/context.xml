@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/" docBase="ROOT" reloadable="true">
+    <Resource name="jdbc/g5-phoenix.ds"
+              auth="Container"
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              type="org.apache.tomcat.jdbc.pool.DataSource"
+              driverClassName="org.postgresql.Driver"
+              username="g5_phoenix_bot"
+              password="password"
+              testOnBorrow="true"
+              validationQuery="SELECT 1"
+              url="jdbc:postgresql://localhost:5432/g5_phoenix"
+              maxActive="150"
+              maxWait="-1"
+              fairQueue="true"/>
+</Context>
