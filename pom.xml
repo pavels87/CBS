@@ -8,6 +8,10 @@
     <packaging>pom</packaging>
     <modules>
         <module>cbs-core</module>
+        <module>cbs-dao</module>
+        <module>cbs-domain</module>
+        <module>cbs-utils</module>
+        <module>cbs-web</module>
     </modules>
 
     <name>cbs</name>
@@ -57,6 +61,7 @@
         <skip.integration.tests>true</skip.integration.tests>
         <swagger-springmvc.version>0.9.5</swagger-springmvc.version>
         <testng.version>6.8</testng.version>
+        <jacoco-maven-plugin.version>0.7.3.201502191951</jacoco-maven-plugin.version>
         <maven-checkstyle-plugin.version>3.0.1</maven-checkstyle-plugin.version>
         <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     </properties>
