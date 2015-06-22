@@ -21,7 +21,7 @@
         </property>
         <property name="mappingResources" value="META-INF/orm.xml"/>
 
-        <property name="packagesToScan" value="com.contmatic.g5.phoenix.domain"/>
+        <property name="packagesToScan" value="com.cbs.domain"/>
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.dialect">

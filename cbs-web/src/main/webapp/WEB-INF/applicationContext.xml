@@ -10,4 +10,23 @@
                            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
                            http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-3.0.xsd ">
-    </beans>
+
+    <import resource="classpath*:META-INF/*-context.xml"/>
+
+    <context:property-placeholder location="classpath:application.properties"/>
+
+    <bean id="config" class="org.apache.commons.configuration.PropertiesConfiguration">
+        <constructor-arg value="application.properties"/>
+        <property name="reloadingStrategy">
+            <bean class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>
+        </property>
+    </bean>
+
+    <bean class="com.contmatic.g5.phoenix.web.helpers.RequestMappingHandlerAdapterInit"/>
+
+    <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+        <property name="objectMapper" ref="objectMapper"/>
+    </bean>
+    <bean id="objectMapper" class="com.contmatic.g5.phoenix.helpers.ConfiguredObjectMapper"/>
+
+</beans>

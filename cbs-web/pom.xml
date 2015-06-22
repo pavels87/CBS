@@ -112,13 +112,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.contmatic</groupId>
-            <artifactId>g5-phoenix-utils</artifactId>
+            <groupId>com.cbs</groupId>
+            <artifactId>cbs-utils</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.contmatic</groupId>
-            <artifactId>g5-phoenix-business</artifactId>
+            <groupId>com.cbs</groupId>
+            <artifactId>cbs-core</artifactId>
             <version>1.0</version>
         </dependency>
 
