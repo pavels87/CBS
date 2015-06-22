@@ -3,7 +3,6 @@ package com.cbs.domain;
 import com.cbs.enums.Country;
 import com.cbs.enums.GameType;
 import com.cbs.enums.ParticipantType;
-import com.contmatic.g5.phoenix.domain.Identifiable;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;

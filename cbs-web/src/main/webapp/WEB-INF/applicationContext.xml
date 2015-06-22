@@ -22,11 +22,11 @@
         </property>
     </bean>
 
-    <bean class="com.contmatic.g5.phoenix.web.helpers.RequestMappingHandlerAdapterInit"/>
+    <bean class="com.cbs.web.helpers.RequestMappingHandlerAdapterInit"/>
 
     <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="objectMapper" ref="objectMapper"/>
     </bean>
-    <bean id="objectMapper" class="com.contmatic.g5.phoenix.helpers.ConfiguredObjectMapper"/>
+    <bean id="objectMapper" class="com.cbs.core.utils.helpers.ConfiguredObjectMapper"/>
 
 </beans>

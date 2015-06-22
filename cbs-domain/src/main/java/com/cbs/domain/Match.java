@@ -1,6 +1,5 @@
 package com.cbs.domain;
 
-import com.contmatic.g5.phoenix.domain.Identifiable;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
 import org.joda.time.Instant;

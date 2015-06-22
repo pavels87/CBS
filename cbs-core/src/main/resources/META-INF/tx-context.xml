@@ -47,6 +47,6 @@
         </property>
     </bean>
 
-    <jpa:repositories base-package="com.contmatic.g5.phoenix.repository" entity-manager-factory-ref="emf"
+    <jpa:repositories base-package="com.cbs.repository" entity-manager-factory-ref="emf"
                       transaction-manager-ref="transactionManager"/>
 </beans>

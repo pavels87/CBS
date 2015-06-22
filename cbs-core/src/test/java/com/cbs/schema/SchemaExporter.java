@@ -1,6 +1,6 @@
-package com.contmatic.g5.phoenix.test.utils;
+package com.cbs.schema;
 
-import com.contmatic.g5.phoenix.domain.DbVersion;
+import com.cbs.domain.DbVersion;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.PostgreSQL9Dialect;
@@ -13,10 +13,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * @author DLevin
- * @since 06.11.2014
- */
 public class SchemaExporter {
 
     public static final String SCHEMA_FILE_PATH = "dbscripts/schema/schema.sql";

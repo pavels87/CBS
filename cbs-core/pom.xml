@@ -61,13 +61,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.contmatic</groupId>
-            <artifactId>g5-phoenix-utils</artifactId>
+            <groupId>com.cbs</groupId>
+            <artifactId>cbs-utils</artifactId>
             <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.contmatic</groupId>
-            <artifactId>g5-phoenix-dao</artifactId>
+            <groupId>com.cbs</groupId>
+            <artifactId>cbs-dao</artifactId>
             <version>1.0</version>
         </dependency>
 

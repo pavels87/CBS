@@ -10,7 +10,7 @@
     <artifactId>cbs-web</artifactId>
     <packaging>war</packaging>
 
-    <name>g5-phoenix-web</name>
+    <name>cbs-web</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

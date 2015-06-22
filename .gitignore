@@ -1,3 +1,4 @@
 /.idea
 /cbs-core/*.iml
 /cbs-web/*.iml
+/dbscripts/.recreate.sh.swp
