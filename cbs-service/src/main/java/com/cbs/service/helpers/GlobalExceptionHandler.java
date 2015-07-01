@@ -1,7 +1,7 @@
 package com.cbs.service.helpers;
 
 
-import com.cbs.controller.dto.common.OperationResult;
+import com.cbs.web.dto.common.OperationResult;
 import com.cbs.service.utils.HttpRequestUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,7 +24,7 @@ import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMeth
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import static com.cbs.controller.dto.common.ResultCode.*;
+import static com.cbs.web.dto.common.ResultCode.*;
 
 
 @ControllerAdvice

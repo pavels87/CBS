@@ -2,3 +2,9 @@
 /cbs-core/*.iml
 /cbs-web/*.iml
 /dbscripts/.recreate.sh.swp
+/cbs-controller/*.iml
+/cbs-service/cbs-service.iml
+/cbs-utils/target
+/cbs-model/cbs-model.iml
+/cbs-utils/cbs-utils.iml
+/cbs.iml

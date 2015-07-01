@@ -27,6 +27,6 @@
     <bean id="jacksonMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="objectMapper" ref="objectMapper"/>
     </bean>
-    <bean id="objectMapper" class="com.cbs.controller.utils.helpers.ConfiguredObjectMapper"/>
+    <bean id="objectMapper" class="com.cbs.web.utils.helpers.ConfiguredObjectMapper"/>
 
 </beans>

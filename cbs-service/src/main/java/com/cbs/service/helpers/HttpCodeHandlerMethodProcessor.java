@@ -1,7 +1,7 @@
 package com.cbs.service.helpers;
 
 
-import com.cbs.controller.dto.common.OperationResult;
+import com.cbs.web.dto.common.OperationResult;
 import org.apache.commons.lang.Validate;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.converter.HttpMessageConverter;
